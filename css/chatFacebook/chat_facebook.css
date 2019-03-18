@@ -1,0 +1,44 @@
+/* **************  CHAT ****** */
+
+.chat-container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 1999 !important;
+  }
+  .chat-button{
+    width: 55%;
+    margin-bottom: 1px;
+    margin-left: 22px;
+    cursor: pointer;
+    border-radius: 25px;
+    user-select: none;
+    padding: 1px 1px 1px 1px;
+    background-color: rgba(255, 117, 178,0.6);
+    text-align: center;
+    color: #fff;
+    z-index: 3998 !important;
+  }
+  .chat-button:hover{
+    background-color: rgba(255, 117, 178, 0.9);
+    text-align: center;
+    color:#fff;
+    z-index: 1999 !important;
+  }
+  .chat-content{
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+    display: none;
+    z-index: 1999 !important;
+  }
+  .margin-button{
+    margin: 1px;
+  }
+  
+  /* ************** FIN  CHAT ****** */

@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title id="nC"></title>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Clases de informática para particulares en su propio domicilio para niños y adultos, también clases a personal de empresas en su propia oficina">
+    <meta name="author" content="Agencia Mall Virtual">
+    <link rel="icon" href="img/favicon.ico">
+
+
+    <!-- CSS Plugins -->
+    <link href="css/plugins/jquery.fullPage.css" rel="stylesheet">
+    <link href="css/plugins/animate.css" rel="stylesheet">
+    <link href="css/plugins/morphext.css" rel="stylesheet">
+    <link href="css/plugins/lightbox.css" rel="stylesheet">
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="fonts/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+
+    <!-- ARCHIVOS CSS Y JS DEL CHAT --> 
+    <link rel="stylesheet" href="./css/chatFacebook/chat_facebook.css"> 
+    <!-- FIN ARCHIVOS CSS Y JS DEL CHAT --> 
+
+    <!-- CSS Custom -->
+    <link href="css/style.css" rel="stylesheet">   
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+
+    <!-- SCRIPT CLIENTES -->
+    <script src="./js/datosCliente.js"></script>
+
+  
+  </head> 
+
+  <body>
+
+    <!-- PRELOADER
+    ============================== -->
+    <div class="preloader">
+      <img src="img/preloader.gif" alt="Cargando..." class="preloader__img">
+    </div>
+
+
+    <!-- BACKGROUND PATTERN
+    ============================== -->
+    <div class="bg-pattern"></div>
+
+
+    <!-- BACKSTRETCH CAROUSEL
+    ============================== -->
+    <div class="backstretch-carousel"></div>
+
+
+    <!-- NAVBAR
+    ============================== -->
+    <div class="navbar navbar-default navbar__initial navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Mostrar menú</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" style="padding: 2px;" href="#inicio"><img style="height: 65px;" class="img-responsive" src="img/logow.png" /></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="fullpage__nav nav navbar-nav navbar-right">
+            <li data-menuanchor="inicio"><a href="#inicio" onclick="track('Inicio');">Inicio</a></li>
+            <li data-menuanchor="servicios"><a href="#servicios" onclick="track('Servicios');">Servicios</a></li>
+            <li data-menuanchor="zonas"><a href="#zonas" onclick="track('Zonas');">Zonas</a></li>
+            <li data-menuanchor="materias"><a href="#materias" onclick="track('Materias');">Materias</a></li>
+            <li data-menuanchor="profesores"><a href="#profesores" onclick="track('Profesores');">Tu Profe</a></li>
+            <li data-menuanchor="contacto"><a href="#contacto" onclick="track('Contacto');">Contacto</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+    <!-- SIDEBAR
+    ============================== -->
+
+    <!-- Sidebar button open -->
+    <div class="hidden sidebar__btn sidebar__btn_open">
+      <span class="sidebar-btn__caption">Menu</span> 
+      <span class="oi oi-menu sidebar-btn__icon sidebar-btn-icon__unhover " title="Open menu" aria-hidden="true"></span>
+      <span class="oi oi-arrow-left sidebar-btn__icon sidebar-btn-icon__hover" title="Open menu" aria-hidden="true"></span>
+    </div>
+
+    <!-- Sidebar menu -->
+    <div class="sidebar__menu sidebar__menu_hidden">
+
+      <!-- Sidebar button close -->
+      <div class="sidebar__btn sidebar__btn_close">
+        <span class="sidebar-btn__caption">Menu</span> 
+        <span class="oi oi-menu sidebar-btn__icon sidebar-btn-icon__unhover " title="Close menu" aria-hidden="true"></span>
+        <span class="oi oi-arrow-right sidebar-btn__icon sidebar-btn-icon__hover" title="Close menu" aria-hidden="true"></span>
+      </div>
+
+      <!-- Sidebar brand name -->
+      <div class="sidebar-menu__brand"><img src="img/logow.png" /></div>
+
+
+    </div> 
+    <!-- / .sidebar-menu__ul -->
+
+
+    <!-- FULLPAGE.JS CONTAINER
+    ============================== -->
+    <div id="fullpage">
+
+      <!-- INICIO
+      ============================== -->
+      <div class="site-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              
+              <!-- Pre heading -->
+              <p class="heading__pre">
+                Clases particulares de informática a domicilio               
+              </p>
+
+              <h1 class="heading heading_lg">
+
+                <span class="js-rotating">
+                  Clases de Informática | Desde los 10 años | En su casa | A su ritmo
+                </span>
+
+                <span class="text-primary">
+
+                  <span class="js-rotating">
+                  a domicilio  | hasta los 99 | En su oficina | En tu tiempo
+                  </span>
+
+                </span>
+              </h1>
+
+              <!-- Sub encabezado -->
+              <p class="heading__sub">
+                Zarcero - Laguna - Tapezco - Guadalupe - Palmira - Zapote
+              - Brisas              
+            </p>
+<div >
+              <!-- BOTON #1 -->
+              <div class="text-center">
+                <a onclick="llamarCliente()" style="color: white;" class="btn btn-xl btn-primary">
+                  <i class="fa fa-phone fa-3x mr-2 animated pulse infinite"></i>
+                  <span  aria-hidden="true">
+                    <br/>
+                    Solicite aquí</span>
+                </a>
+              </div>
+              <!-- FIN BOTON #1 -->
+              <!-- BOTON #2 -->
+              <!-- <div class="text-center">
+                  <a onclick="mensajeCliente()" style="color: white;" class="btn btn-xl btn-primary">
+                    <i class="fa fa-whatsapp fa-3x mr-2 animated pulse infinite"></i>
+                    <span  aria-hidden="true">
+                      <br/>
+                      Solicite aquí</span>
+                  </a>
+                </div> -->
+                <!-- FIN BOTON #2 -->
+</div>
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </div> 
+      <!-- / FIN INICIO -->
+
+
+      <!-- SERVICIOS
+      ============================== -->
+      <div class="site-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              
+              <!-- Heading -->
+              <h1 class="heading">
+                Un servicio <span class="text-primary">exclusivo</span> en su hogar u oficina
+              </h1>
+
+              <!-- Sub heading -->
+              <p class="heading__sub">
+                Voy a su lugar de trabajo o vivienda para impartir clases de informática personalizadas.
+              </p>
+
+            </div>
+            <div class="col-sm-4">
+
+              <!-- SERVICIOS #1 -->
+              <div class="servicios__item">
+                <h3 class="servicios-item__title">
+                  <span class="text-primary servicios-item-title__icon oi oi-people" title="Todas las edades" aria-hidden="true"></span> Todas las edades
+                </h3>
+                <p class="servicios-item__content">
+                  Desde los 10 años hasta los 99 años. Ofrezco clases de informatica  para niños y adultos sin salir de su lugar habitual, ya sea su residencia u oficina.
+                </p>
+              </div> 
+              <!-- FIN DE SERVICIOS #1 -->
+
+            </div>
+            <div class="col-sm-4">
+
+              <!-- SERVICIOS #2 -->
+              <div class="servicios__item">
+                <h3 class="servicios-item__title">
+                  <span class="text-primary servicios-item-title__icon oi oi-graph" title="Todos los niveles" aria-hidden="true"></span> Todos los niveles
+                </h3>
+                <p class="servicios-item__content">
+                  Desde el nivel más básico o sin conocimientos hasta niveles más avanzados, en función de la materia a impartir. Se adapta el contenido a su conocimiento.
+                </p>
+              </div> 
+              <!-- FIN DE SERVICIOS #2 -->
+
+            </div>
+            <div class="col-sm-4">
+
+              <!-- SERVICIOS #3 -->
+              <div class="servicios__item">
+                <h3 class="servicios-item__title">
+                  <span class="text-primary servicios-item-title__icon oi oi-layers" title="Múltiples materias" aria-hidden="true"></span> Varias materias
+                </h3>
+                <p class="servicios-item__content">
+                  Desde el uso del sistema operativo, ofimática, hasta programación. Adaptamos los cursos a sus necesidades y conocimientos.
+                </p>
+              </div> 
+              <!-- FIN DE SERVICIOS #3 -->
+
+            </div>            
+			<div class="col-sm-4">
+
+              <!-- SERVICIOS #4 -->
+              <div class="servicios__item">
+                <h3 class="servicios-item__title">
+                  <span class="text-primary servicios-item-title__icon oi oi-timer" title="Duración de las Clases" aria-hidden="true"></span> Duración y precio
+                </h3>
+                <p class="servicios-item__content">
+                  Las clases particulares tienen una duración promedio de 2 horas por sesión. El precio por hora es de 5,000 colones (en cursos de ofimática o sistemas como Windows 10), incluido el transporte. <br>
+                  El precio por hora final dependerá de la materia a impartir.
+                </p>
+              </div> 
+              <!-- FIN DE SERVICIOS #4 -->
+
+            </div>			
+			<div class="col-sm-4">
+
+              <!-- SERVICIOS #5 -->
+              <div class="servicios__item">
+                <h3 class="servicios-item__title">
+                  <span class="text-primary servicios-item-title__icon oi oi-person" title="Tipos de Clase" aria-hidden="true"></span> Tipos de Clase
+                </h3>
+                <p class="servicios-item__content">
+                  Presencial con máximo 2 estudiantes, utilizando sus propios equipos. En el caso de cursos para empresas, si disponen de una sala, también se pueden preparar clases grupales.
+                </p>
+              </div> 
+              <!-- FIN DE SERVICIOS #5 -->
+
+            </div>			
+			<div class="col-sm-4">
+
+              <!-- SERVICIOS #6 -->
+              <div class="servicios__item">
+                <h3 class="servicios-item__title">
+                  <span class="text-primary servicios-item-title__icon oi oi-badge" title="Garantía de devolución" aria-hidden="true"></span> Garantía de devolución
+                </h3>
+                <p class="servicios-item__content">
+                  Si no queda satisfecho (a) con el servicio de clases de informática, le devolvemos su dinero.
+                </p>
+              </div> 
+              <!-- FIN DE SERVICIOS #6 -->
+
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </div> 
+      <!-- / FIN SERVICIOS -->
+
+
+      <!-- ZONAS DEL SERVICIO
+      ============================== -->
+      <div class="site-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              
+              <!-- Heading -->
+              <h1 class="heading">
+                Imparto cursos de informática en <span class="text-primary"> Zarcero</span> y distritos aledaños
+              </h1>
+
+              <!-- Sub heading -->
+              <p class="heading__sub">
+                Me desplazo a cantones vecinos de Zarcero, para atender empresas o grupos de personas con interés en adquirir conocimientos de informática.
+              </p>
+
+            </div>
+          </div> <!-- / .row -->
+          <div class="row">
+            <div class="col-sm-3">
+              
+              <!-- zonas item -->
+              <div class="zonas__item">
+
+                <!-- zonas title -->
+                <h3 class="zonas-item__title">Zarcero</h3>
+
+              </div> <!-- / .zonas__item -->
+
+            </div>            
+			<div class="col-sm-3">
+              
+              <!-- zonas item -->
+              <div class="zonas__item">
+
+                <!-- zonas title -->
+                <h3 class="zonas-item__title">Laguna</h3>
+
+              </div> <!-- / .zonas__item -->
+
+            </div>            
+			<div class="col-sm-3">
+              
+              <!-- zonas item -->
+              <div class="zonas__item">
+
+                <!-- zonas title -->
+                <h3 class="zonas-item__title">Tapezco</h3>
+
+              </div> <!-- / .zonas__item -->
+
+            </div>            
+			<div class="col-sm-3">
+              
+              <!-- zonas item -->
+              <div class="zonas__item">
+
+                <!-- zonas title -->
+                <h3 class="zonas-item__title">Guadalupe</h3>
+
+              </div> <!-- / .zonas__item -->
+
+            </div>
+          </div> <!-- / .row -->          
+		  <div class="row">
+            <div class="col-sm-3">
+              
+              <!-- zonas item -->
+              <div class="zonas__item">
+
+                <!-- zonas title -->
+                <h3 class="zonas-item__title">Palmira</h3>
+
+              </div> <!-- / .zonas__item -->
+
+            </div>            
+			<div class="col-sm-3">
+              
+              <!-- zonas item -->
+              <div class="zonas__item">
+
+                <!-- zonas title -->
+                <h3 class="zonas-item__title">Zapote</h3>
+
+              </div> <!-- / .zonas__item -->
+
+            </div>            
+			<div class="col-sm-3">
+              
+              <!-- zonas item -->
+              <div class="zonas__item">
+
+                <!-- zonas title -->
+                <h3 class="zonas-item__title">Brisas</h3>
+
+              </div> <!-- / .zonas__item -->
+
+            </div>            
+			<div class="col-sm-3">
+              
+              <!-- zonas item -->
+              
+              <!-- <div class="zonas__item">
+                <h3 class="zonas-item__title">San Carlos</h3>
+              </div>  -->
+
+              <!-- / .zonas__item -->
+
+            </div>			
+			<div class="col-sm-3">
+              
+              <!-- zonas item -->
+              
+              <!-- <div class="zonas__item">
+                <h3 class="zonas-item__title">San Carlos</h3>
+              </div>  -->
+
+              <!-- / .zonas__item -->
+
+            </div>			
+			<div class="col-sm-3">
+              
+              <!-- zonas item -->
+              
+              <!-- <div class="zonas__item">
+                <h3 class="zonas-item__title">San Carlos</h3>
+              </div>  -->
+
+              <!-- / .zonas__item -->
+
+            </div>			
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </div> 
+      <!-- / FIN ZONAS DEL SERVICIO -->
+
+
+      <!-- MATERIAS
+      ============================== -->
+      <div class="site-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              
+              <!-- Heading -->
+              <h1 class="heading">
+                Ofrezco variedad de <span class="text-primary">contenidos</span> para clases de informática
+              </h1>
+
+              <!-- Sub heading -->
+              <p class="heading__sub">
+                Desde el sistema operativo, hasta programación.
+              </p>
+
+            </div>
+            <div class="col-sm-4">
+
+              <!-- materias item #1 -->
+              <div class="materias__item">
+                <h3 class="materias-item__title">
+                  <span class="materias-item-title__icon oi oi-task" title="Sistemas" aria-hidden="true"></span> Sistemas
+                </h3>
+                <p class="materias-item__content">
+                  Le enseñamos a manejar un sistema windows en sus diferentes versiones 7,8,10, entre otros. Manejar archivos, crear, copiar, mover. 
+                  <br>
+                  Pierda el miedo de utilizar su computadora.
+                </p>
+              </div> <!-- / .materias__item -->
+
+            </div>
+            <div class="col-sm-4">
+
+              <!-- materias item #2 -->
+              <div class="materias__item">
+                <h3 class="materias-item__title">
+                  <span class="materias-item-title__icon oi oi-task" title="Ofimática" aria-hidden="true"></span> Ofimática
+                </h3>
+                <p class="materias-item__content">
+                  Descubra los secretos de los programas de productividad del paquete Office: Word, Excel, Power Point o incluso Access. Aprendereá a crear presentaciones, documentos varios, análisis de datos, etc.
+                </p>
+              </div> <!-- / .materias__item -->
+
+            </div>
+            <div class="col-sm-4">
+
+              <!-- materias item #3 -->
+              <div class="materias__item">
+                <h3 class="materias-item__title">
+                  <span class="materias-item-title__icon oi oi-task" title="Internet" aria-hidden="true"></span> Internet y correo electrónico
+                </h3>
+                <p class="materias-item__content">
+                  Le enseño a navegar por la internet, realizar búsquedas utilizando filtros del navegador y a utilizar su correo electrónico. A perder el miedo a las compras online. 
+                </p>
+              </div> <!-- / .materias__item -->
+
+            </div>            
+			<div class="col-sm-4">
+
+              <!-- materias item #4 -->
+              <div class="materias__item">
+                <h3 class="materias-item__title">
+                  <span class="materias-item-title__icon oi oi-task" title="Presencia en Internet" aria-hidden="true"></span> Presencia en Internet
+                </h3>
+                <p class="materias-item__content">
+                  Si tiene una empresa y quiere tener presencia en Internet le ayudamos a crear su página web e incluso desarrollarla en su aprendizaje.
+                </p>
+              </div> <!-- / .materias__item -->
+			  
+            </div>
+			<div class="col-sm-4">
+			  <!-- materias item #4 -->
+              <div class="materias__item">
+                <h3 class="materias-item__title">
+                  <span class="materias-item-title__icon oi oi-task" title="Programación" aria-hidden="true"></span> Programación
+                </h3>
+                <p class="materias-item__content">
+                  Si desea iniciarse en el mundo de la programación le enseñamos varios de los lenguajes de programación más extendidos, como PHP y Javascript.
+                </p>
+              </div> <!-- / .materias__item -->
+			  
+            </div>
+			  <div class="col-sm-4">
+			  			  <!-- materias item #4 -->
+              <div class="materias__item">
+                <h3 class="materias-item__title">
+                  <span class="materias-item-title__icon oi oi-task" title="Bases de Datos" aria-hidden="true"></span> Bases de Datos
+                </h3>
+                <p class="materias-item__content">
+                  Cualquier proyecto de entidad cuenta con bases de datos, ya sean en formato Excel, Access o sistemas más avanzados en SQL o bases de datos relacionales.
+                </p>
+              </div> <!-- / .materias__item -->
+
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </div> 
+      <!-- / FIN MATERIAS -->
+
+
+  <!-- PROFESORA
+  ============================== -->
+  <div class="site-wrapper">
+      <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              
+              <!-- Heading -->
+              <h1 class="heading">
+                <span class="text-primary">Tu </span> Profesora
+              </h1>
+
+              <!-- Sub heading -->
+              <p class="heading__sub">
+                
+              </p>
+
+            </div>
+          </div> <!-- / .row -->
+          <div class="row">
+            <div class="col-sm-6 col-md-5 col-md-offset-1">
+
+              <!-- profesores item -->
+              <div class="profesores__item">
+
+                  <!-- Title -->
+                <h3 class="profesores-item__title">
+                  <span class="text-primary">Experiencia.</span> 
+                  En todos los niveles y edades.
+                </h3>
+
+                <!-- Summary -->
+                <div class="profesores-item__summary">
+                  Tengo experiencia en la impartición de cursos de informática a todos los niveles, como: niños, jóvenes, adultos y de diferentes ámbitos como empresas y residencias.
+                </div>                
+				<div class="profesores-item__summary">
+                  Siempre se utiliza equipo de cómputo del cliente, de esta forma se familiariza en su uso. Además las dudas se pueden resolver en la clase o bien enviándome un e-mail, sobre problemas concretos relacionados al curso.
+                </div>
+              </div> <!-- / .profesores__item -->
+
+            </div>
+            <div class="col-sm-6 col-md-5">
+
+              <!-- profesores item -->
+              <div class="profesores__item">
+
+                  <!-- Title -->
+                <h3 class="profesores-item__title">
+                  <span class="text-primary">¿Tienes interés?</span> 
+                </h3>
+
+                <!-- Summary -->
+                <div class="profesores-item__summary">
+                  Estoy para servirle. Solo debes contactarme dando click en el siguiente botón.
+                </div>
+                <br/>
+                
+                  <button onclick="mensajeCliente()" class="btn btn-danger btn-block">
+                    <a  style="color: white;"> 
+                      <i class="fa fa-whatsapp fa-3x mr-2 animated pulse infinite"></i>
+                      <h3> Solicitar servicio </h3></a>
+                  </button>
+                
+              </div> <!-- / .profesora -->
+
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+  </div> 
+  <!-- / FIN PROFESORA -->
+
+
+      <!-- CONTACT SCREEN
+      ============================== -->
+      <div class="site-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              
+              <!-- Heading -->
+              <h1 class="heading">
+                <span class="text-primary">Contacte a: </span> TU PROFE VIVI</h1>
+
+              <!-- Sub heading -->
+              <p class="heading__sub">
+                Consúltame por mis servicios de cursos de informática a domicilio para particulares y empresas.
+              </p>
+
+            </div>
+          </div> <!-- / .row -->
+          <div class="row">
+            <div class="col-sm-6 col-md-5 col-md-offset-1">
+
+              <!-- Contact info -->
+              <h3 class="contact-info__title">
+                vicruz16<span class="text-primary">@yahoo.es</span>
+              </h3>
+              <h3 class="contact-info__title">
+                <script> clientes(telFijo)</script>
+              </h3>
+              <p>
+                Estaré encantada de atenderle y proponerle un plan de formación personalizado.
+                <br />
+                Le ofrecezco las mejores clases de informática a domicilio.
+              </p>
+
+              <!-- Social links -->
+              <div class="contact-info__social">
+                <a onclick="faceCliente()" class="contact-info-social__item twitter">
+                  <i class="fa fa-facebook fa-3x animated pulse infinite"></i>
+                </a>
+              </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-5">
+
+              <!-- Alert message -->
+              <div class="alert contact-form__alert" id="form_message" role="alert"></div>
+
+              <!-- BOTONES DE CONTACTO-->
+              <div>
+                <button class="btn btn-danger btn-block">
+                  <a onclick="llamarCliente()" style="color: white;">
+                    <i class="fa fa-phone fa-3x mr-2 animated pulse infinite"></i>
+                    Llamar</a>
+                </button>
+                <br>
+                <button class="btn btn-success btn-block">
+                  <a onclick="mensajeCliente()" style="color: white;"> 
+                    <i class="fa fa-whatsapp fa-3x mr-2 animated pulse infinite"></i>
+                    Whatsapp</a>
+                </button>
+              </div>
+              
+
+            </div>
+          </div> <!-- / .row -->
+
+              <hr class="my-4">
+
+<!-- FOOTER -->
+<div>
+                    <!--Copyright-->
+              <div class="footer-copyright py-3 margenes">
+                <p>© 2019 | <a onclick="urlEmpresa()">
+                <script>clientes(empresa);</script>
+                </a></p>
+                <img src="./img/logoMV.png" alt="Mall Virtual" class="animated zoomIn infinite">
+              </div>
+                    <!--/.Copyright-->   
+</div>
+  
+<!-- FIN FOOTER -->
+          
+        </div> <!-- / .container -->
+      </div> <!-- / .site-wrapper -->
+    </div> <!-- / #fullpage -->
+
+<!-- ****************************************************** -->
+
+<!-- CHAT FACEBOOK -->
+  <section class="chat-container">
+      <div class="chat-button text-center animated pulse infinite">Abra/Cierre el Chat
+        <i class="fa fa-facebook"></i> 
+         <p class="margin-button"><script>clientes(cliente)</script></p>
+      </div>
+      <div class="chat-content">      
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FProfe-Vivi-2236220783309614%2F&tabs=messages&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=292986951349343" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+      </div>
+  </section>
+  
+<!-- FIN CHAT FACEBOOK -->
+
+<!-- * * * * * * * * *  * * *  * * * * *  * * * * * *  * * * * -->
+
+<!-- JavaScript
+      ================================================== -->
+      
+      <!-- JS Global -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="js/bootstrap/bootstrap.min.js"></script>
+      
+      <!-- JS Plugins -->
+      <script src="js/plugins/jquery.slimscroll.min.js"></script>
+      <script src="js/plugins/jquery.fullPage.min.js"></script>
+      <script src="js/plugins/jquery.backstretch.min.js"></script>
+      <script src="js/plugins/morphext.min.js"></script>
+      <script src="js/plugins/imagesloaded.pkgd.min.js"></script>     
+      
+      <!-- JS Custom -->
+      <script src="js/custom_crossfading.js"></script>
+      <script src="js/custom_text-rotator.js"></script>
+      <script src="js/custom.js"></script>
+
+	<div id="modal1" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content"></div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  
+<!-- CHAT FACEBOOK -->
+<script src="./js/chatFacebook/chat_facebook.js"></script>
+<!-- FIN CHAT FACEBOOK -->
+
+</body>
+</html>
